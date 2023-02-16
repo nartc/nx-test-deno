@@ -1,3 +1,5 @@
 {
-  "imports": {}
+  "imports": {
+    "@test-deno/my-deno-lib": "./libs/my-deno-lib/src/index.ts"
+  }
 }

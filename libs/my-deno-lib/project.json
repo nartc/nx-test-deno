@@ -1,0 +1,24 @@
+{
+  "name": "my-deno-lib",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/my-deno-lib/src",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/deno:test",
+      "outputs": ["coverage/libs/my-deno-lib"],
+      "options": {
+        "coverageDirectory": "coverage/libs/my-deno-lib",
+        "denoConfig": "libs/my-deno-lib/deno.json",
+        "check": "local"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/deno:lint",
+      "options": {
+        "denoConfig": "libs/my-deno-lib/deno.json"
+      }
+    }
+  },
+  "tags": []
+}
